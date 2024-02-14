@@ -1,0 +1,17 @@
+﻿<Window x:Class="ManuelBelausteguiChallengeM5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManuelBelausteguiChallengeM5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Canvas>
+        <Calendar Canvas.Left="250"  Margin="20" SelectionMode="SingleDate" SelectedDatesChanged="DateChange" Width="252" Name="Calendar"/>
+        <TextBox Canvas.Left="150" Canvas.Bottom="150" BorderThickness="2"  Name="TimeTextBox" Width="250" Height="50">12:00 AM</TextBox>
+        <Button Name="UpButton" Canvas.Right="325" Canvas.Bottom="180" Width="50" Click="UpClick">UP</Button>
+        <Button Name="DownButton" Canvas.Right="325" Canvas.Bottom="160" Width="50" Click="DownClick">Down</Button>
+        <Button Name="SelectButton" Canvas.Right="200" Canvas.Bottom="160" Width="50" Height="25" Click="SelectClick">Select</Button>
+    </Canvas>
+</Window>
